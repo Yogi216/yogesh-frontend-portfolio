@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yogesh S — Frontend Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:ital,wght@0,100;0,300;0,400;0,600;1,300&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <link rel="stylesheet" href="./Main/style.css" />
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- BACKGROUND 3D CANVAS -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-logo">YS.</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- MOBILE MENU DRAWER -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#stack" class="mobile-nav-link">Stack</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#journey" class="mobile-nav-link">Journey</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer">Yogesh S · Frontend Developer</div>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div
+        class="nebula-blob blob-pink"
+        style="width: 600px; height: 600px; top: -200px; left: -200px"
+      ></div>
+      <div
+        class="nebula-blob blob-blue"
+        style="width: 500px; height: 500px; bottom: -100px; right: -150px"
+      ></div>
+
+      <div class="hero-video-bg">
+        <video autoplay muted loop playsinline>
+          <source
+            src="https://v1.pinimg.com/videos/mc/720p/f5/19/71/f51971a67a4fae8a9b2a0dc3e0a287ac.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-tag">⬡ Frontend Developer · Chennai, TN</div>
+        <h1 class="hero-name">Yogesh S</h1>
+        <p class="hero-headline">
+          Frontend · Web Design · Vibe Coder · React Enthusiast
+        </p>
+        <p class="hero-location">
+          📍 Chennai, Tamil Nadu · Open to Remote & On-site
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-ghost">Let's Connect</a>
+        </div>
+      </div>
+
+      <div class="hero-socials">
+        <div class="social-line"></div>
+        <a href="https://github.com/Yogi216" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/yogesh-s21/" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://www.fiverr.com/s/7YPEv1y" target="_blank">Fiverr</a>
+        <div class="social-line"></div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>SCROLL</span>
+        <div class="arrow"></div>
+      </div>
+    </section>
+
+    <div class="cosmic-divider"></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div
+        class="nebula-blob blob-teal"
+        style="
+          width: 400px;
+          height: 400px;
+          top: 50%;
+          left: -100px;
+          opacity: 0.08;
+        "
+      ></div>
+      <div class="section-inner">
+        <div class="section-label reveal">001 · About</div>
+        <h2 class="section-title reveal">
+          <span class="gradient-text">Hi, I'm Yogesh</span>
+        </h2>
+        <div class="about-grid">
+          <div class="about-text reveal-left">
+            <p>
+              A <strong>junior frontend developer</strong> passionate about
+              building beautiful, responsive web applications. I recently
+              completed an intensive Java Full Stack bootcamp where I mastered
+              modern frontend technologies.
+            </p>
+            <p>
+              I specialize in <strong>React.js</strong>, crafting interactive
+              UIs with smooth animations, turning pixel-perfect designs into
+              production-ready code that people genuinely enjoy using.
+            </p>
+            <p>
+              I believe great software starts with
+              <strong>great design</strong>. Every line of code I write is
+              intentional, readable, and built with best practices in mind.
+            </p>
+            <p>
+              Currently seeking my first
+              <strong>junior frontend developer role</strong> at a startup or
+              growing company. Based in Chennai — open to both remote and office
+              positions.
+            </p>
+          </div>
+          <div class="about-cards reveal-right">
+            <div class="about-card">
+              <h4>⟡ What I Do</h4>
+              <p>
+                Build responsive, mobile-first websites · Create interactive
+                React apps · Implement smooth animations · Turn designs into
+                pixel-perfect code
+              </p>
+            </div>
+            <div class="about-card">
+              <h4>⟡ My Approach</h4>
+              <p>
+                Interfaces that are not just beautiful, but intuitive and
+                user-friendly. Clean code, maintainable architecture,
+                intentional design at every layer.
+              </p>
+            </div>
+            <div class="about-card">
+              <h4>⟡ Currently Seeking</h4>
+              <p>
+                First junior frontend role at a startup or growing company.
+                Chennai-based, open to remote. Let's build something great
+                together.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cosmic-divider"></div>
+
+    <!-- TECH STACK -->
+    <section id="stack">
+      <div class="section-inner">
+        <div class="section-label reveal">002 · Arsenal</div>
+        <h2 class="section-title reveal">
+          <span class="gradient-text">Tech Stack</span>
+        </h2>
+        <div class="stack-grid" id="stackGrid"></div>
+      </div>
+    </section>
+
+    <div class="cosmic-divider"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div
+        class="nebula-blob blob-pink"
+        style="
+          width: 500px;
+          height: 500px;
+          bottom: 0;
+          right: -100px;
+          opacity: 0.09;
+        "
+      ></div>
+      <div class="section-inner">
+        <div class="section-label reveal">003 · Work</div>
+        <h2 class="section-title reveal">
+          <span class="gradient-text">Projects</span>
+        </h2>
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <div class="project-preview">
+              <div class="project-preview-fallback">01</div>
+            </div>
+            <div class="project-body">
+              <div class="project-num">PROJECT — 01</div>
+              <div class="project-name">ColorWeave UI</div>
+              <p class="project-desc">
+                A beautifully crafted UI component library featuring a rich
+                color palette system and weave-inspired design patterns. Built
+                for developers who care about aesthetics.
+              </p>
+              <div>
+                <span class="project-tag">React</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">Design System</span>
+              </div>
+              <br />
+              <a
+                href="https://colorweave-ui.vercel.app/"
+                target="_blank"
+                class="project-link"
+                >Live Site <span class="arr">→</span></a
+              >
+            </div>
+          </div>
+
+          <div class="project-card reveal" style="transition-delay: 0.15s">
+            <div class="project-preview">
+              <div class="project-preview-fallback">02</div>
+            </div>
+            <div class="project-body">
+              <div class="project-num">PROJECT — 02</div>
+              <div class="project-name">ResumeAI Landing Page</div>
+              <p class="project-desc">
+                A sleek, conversion-focused landing page for an AI-powered
+                resume builder. Features smooth animations, compelling copy
+                layout, and responsive design.
+              </p>
+              <div>
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <br />
+              <a
+                href="https://yogi216.github.io/resumeai-landing-page/"
+                target="_blank"
+                class="project-link"
+                >Live Site <span class="arr">→</span></a
+              >
+            </div>
+          </div>
+
+          <div class="project-card reveal" style="transition-delay: 0.3s">
+            <div class="project-preview">
+              <div class="project-preview-fallback">03</div>
+            </div>
+            <div class="project-body">
+              <div class="project-num">PROJECT — 03</div>
+              <div class="project-name">SQL Masterclass UI</div>
+              <p class="project-desc">
+                A polished educational platform UI for an SQL masterclass
+                course. Clean layout, structured content hierarchy, and an
+                intuitive learning experience design.
+              </p>
+              <div>
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">Responsive</span>
+              </div>
+              <br />
+              <a
+                href="https://yogi216.github.io/sql-masterclass-ui/"
+                target="_blank"
+                class="project-link"
+                >Live Site <span class="arr">→</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cosmic-divider"></div>
+
+    <!-- JOURNEY -->
+    <section id="journey">
+      <div
+        class="nebula-blob blob-blue"
+        style="
+          width: 450px;
+          height: 450px;
+          top: 20%;
+          left: -100px;
+          opacity: 0.07;
+        "
+      ></div>
+      <div class="section-inner">
+        <div class="section-label reveal">004 · Journey</div>
+        <h2 class="section-title reveal">
+          <span class="gradient-text">My Orbit</span>
+        </h2>
+        <div class="timeline" id="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">JUN 2022</div>
+            <div class="timeline-title">🎓 College Journey Begins</div>
+            <div class="timeline-body">
+              Started my college journey and discovered a growing interest in
+              technology and web development. Began exploring how websites are
+              built and developed curiosity for creating digital experiences.
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot pink"></div>
+            <div class="timeline-date">APR 2023</div>
+            <div class="timeline-title">💻 Exploring Web Development</div>
+            <div class="timeline-body">
+              Learned the fundamentals of HTML, CSS, and JavaScript while
+              balancing academics. Started building small projects and
+              experimenting with UI design, responsive layouts, and interactive
+              websites.
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot gold"></div>
+            <div class="timeline-date">SEP 2024</div>
+            <div class="timeline-title">⚡ Frontend Skills Level Up</div>
+            <div class="timeline-body">
+              Focused deeply on frontend development and modern UI creation.
+              Improved my understanding of JavaScript, React.js, animations,
+              responsive design, and creating clean user experiences.
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">JUL 2025</div>
+            <div class="timeline-title">🚀 Java Full Stack Bootcamp</div>
+            <div class="timeline-body">
+              Completed an intensive Java Full Stack bootcamp where I gained
+              hands-on experience with frontend and backend technologies. Worked
+              on real-world projects, Git workflows, responsive interfaces, and
+              deployment practices.
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot pink"></div>
+            <div class="timeline-date">DEC 2025</div>
+            <div class="timeline-title">🌐 Building & Deploying Projects</div>
+            <div class="timeline-body">
+              Built and deployed multiple frontend projects including portfolio
+              websites, landing pages, and UI-focused applications using React,
+              JavaScript, HTML, CSS, Bootstrap, and modern development tools.
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">NOW · 2026</div>
+            <div class="timeline-title">🔭 Seeking the Next Star</div>
+            <div class="timeline-body">
+              Actively looking for junior frontend developer opportunities where
+              I can contribute, grow, and build impactful digital experiences.
+              Continuously learning modern frontend technologies and improving
+              my design and development skills every day.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cosmic-divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div
+        class="nebula-blob blob-teal"
+        style="
+          width: 600px;
+          height: 600px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0.06;
+        "
+      ></div>
+      <div class="section-inner">
+        <div class="contact-inner">
+          <div class="section-label reveal" style="justify-content: center">
+            005 · Contact
+          </div>
+          <h2 class="section-title reveal">
+            <span class="gradient-text">Let's Connect</span>
+          </h2>
+          <p
+            class="reveal"
+            style="
+              color: rgba(248, 249, 255, 0.5);
+              margin-bottom: 2rem;
+              line-height: 1.8;
+              font-size: 0.95rem;
+            "
+          >
+            Whether you have a project in mind, want to discuss opportunities,
+            or just want to say hello — my inbox is always open.
+          </p>
+          <div class="contact-email reveal">ss.yogesh04@gmail.com</div>
+
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="YOUR NAME" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                placeholder="YOUR EMAIL"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="YOUR MESSAGE"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-send" id="sendBtn">
+              ⟡ TRANSMIT MESSAGE ⟡
+            </button>
+            <div class="form-msg" id="formMsg"></div>
+          </form>
+
+          <div class="contact-socials reveal">
+            <a href="https://github.com/Yogi216" target="_blank">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/yogesh-s21/" target="_blank"
+              >LinkedIn ↗</a
+            >
+            <a href="mailto:ss.yogesh04@gmail.com">Email ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Designed & Built by
+        <span style="color: var(--cosmic-teal)">Yogesh S</span> · Chennai, Tamil
+        Nadu · 2026
+      </p>
+      <p style="margin-top: 0.5rem; opacity: 0.5">Built with ♥ and starlight</p>
+    </footer>
+
+    <script src="./Main/script.js"></script>
+  </body>
+</html>
